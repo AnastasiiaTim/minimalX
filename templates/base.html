@@ -43,6 +43,12 @@
     <link rel="stylesheet" type="text/css" href="{{ SITEURL }}/theme/css/shariff.min.css">
     <link rel="stylesheet" type="text/css" href="{{ SITEURL }}/theme/css/pygments-highlight-github.css">
 
+    <!-- Icon -->
+    {% if MINIMALX_FAVICON %}
+    <link rel="shortcut icon" href="{{ SITEURL }}/{{ MINIMALX_FAVICON }}?v2">
+    <link rel="icon" href="{{ SITEURL }}/{{ MINIMALX_FAVICON }}?v2">
+    {% endif %}
+
     <!-- JavaScript -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
     <script src="{{ SITEURL }}/theme/js/jqcloud.min.js"></script>
@@ -149,7 +155,7 @@
         <!--</ul>-->
     <!--</div>-->
     <div id="copyright" class="w3-center w3-small w3-text-grey w3-padding-48">
-        <span>Made with ❤️ by FK | Powered by <a href="http://getpelican.com" target="_blank"><u>Pelican</u></a> and <a href="https://github.com/art1fa/minimalX" target="_blank"><u>minimalX</u></a>{% if FEED_ALL_RSS %} | <a href="{{ FEED_DOMAIN }}/{{ FEED_ALL_RSS }}">RSS <i class="fa fa-rss" aria-hidden="true"></i></a>{% endif %}
+        <span>Powered by <a href="http://getpelican.com" target="_blank"><u>Pelican</u></a> and <a href="https://github.com/art1fa/minimalX" target="_blank"><u>minimalX</u></a>{% if FEED_ALL_RSS %} | <a href="{{ FEED_DOMAIN }}/{{ FEED_ALL_RSS }}">RSS <i class="fa fa-rss" aria-hidden="true"></i></a>{% endif %}
         </span>
     </div>
   </footer>
